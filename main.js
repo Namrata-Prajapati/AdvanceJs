@@ -1,3 +1,4 @@
+// all the output will be visible to console of browser after inspection
 console.log("Hello this is my script tags");
 
 // single line comment
@@ -90,3 +91,18 @@ const OurObject = {
 
 OurObject.getThis(); // it gives object as parent this
 OurObject.arrowGetThis(); // it gives window as parent object
+
+console.log("Recursive function:- ");
+var num =1;
+function printNum(){
+    console.log(num);
+    num++;
+    if(num <= 10){
+        printNum();
+    }
+    else{
+        return 
+    }
+}
+
+printNum();
